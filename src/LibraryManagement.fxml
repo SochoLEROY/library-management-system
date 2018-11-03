@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementController">
+   <children>
+      <TableView fx:id="tableView" layoutX="503.0" layoutY="100.0" onMouseClicked="#showOnClick" prefHeight="255.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="titleColumn" prefWidth="75.0" text="title" />
+            <TableColumn fx:id="authorColumn" prefWidth="75.0" text="author" />
+            <TableColumn fx:id="isbnColumn" prefWidth="75.0" text="isbn" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtfTitle" layoutX="221.0" layoutY="100.0" />
+      <TextField fx:id="txtfAuthor" layoutX="221.0" layoutY="164.0" />
+      <Button layoutX="211.0" layoutY="298.0" mnemonicParsing="false" onAction="#addBook" text="add" />
+      <Label layoutX="123.0" layoutY="106.0" text="title" />
+      <Label layoutX="123.0" layoutY="170.0" text="author" />
+      <Button layoutX="290.0" layoutY="298.0" mnemonicParsing="false" onAction="#deleteButton" text="delete" />
+      <Button layoutX="376.0" layoutY="298.0" mnemonicParsing="false" onAction="#refreshButton" text="refresh" />
+      <Button layoutX="827.0" layoutY="518.0" mnemonicParsing="false" onAction="#backHomeButton" text="home" />
+      <TextField fx:id="txtfIsbn" layoutX="221.0" layoutY="222.0" />
+      <Label layoutX="129.0" layoutY="228.0" text="isbn" />
+      <Button layoutX="288.0" layoutY="370.0" mnemonicParsing="false" onAction="#updateButton" text="update" />
+   </children>
+</AnchorPane>

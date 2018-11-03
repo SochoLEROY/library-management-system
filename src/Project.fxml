@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="277.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectController">
+   <children>
+      <GridPane layoutX="93.0" layoutY="61.0" prefHeight="157.0" prefWidth="278.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="111.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="167.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtfUsername" prefHeight="39.0" prefWidth="156.0" GridPane.columnIndex="1" />
+            <PasswordField fx:id="pw" prefHeight="39.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="username" />
+            <Label text="password" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#loginButtonAction" text="login" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button layoutX="204.0" layoutY="224.0" mnemonicParsing="false" onAction="#changeScreenButton" text="sign up" />
+   </children>
+</AnchorPane>

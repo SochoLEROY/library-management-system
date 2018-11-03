@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckoutManagementController">
+   <children>
+      <TextField fx:id="txtfBookId" layoutX="116.0" layoutY="96.0" onAction="#bookEnter" />
+      <Label fx:id="lblbookTitle" layoutX="346.0" layoutY="102.0" text="Book Title" />
+      <TextField fx:id="txtfUserId" layoutX="116.0" layoutY="163.0" onAction="#userEnter" />
+      <Label fx:id="lblUser" layoutX="346.0" layoutY="169.0" text="User Name" />
+      <Label layoutX="31.0" layoutY="102.0" text="book id" />
+      <Label layoutX="31.0" layoutY="169.0" text="user id" />
+      <Button layoutX="116.0" layoutY="238.0" mnemonicParsing="false" onAction="#checkoutBook" text="Checkout" />
+      <TableView fx:id="tableView" layoutX="429.0" layoutY="83.0" prefHeight="224.0" prefWidth="342.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="transaction id" />
+          <TableColumn fx:id="bookIdColumn" prefWidth="75.0" text="bookId" />
+          <TableColumn fx:id="userIdColumn" prefWidth="75.0" text="userId" />
+            <TableColumn fx:id="dateColumn" prefWidth="75.0" text="date issued" />
+        </columns>
+      </TableView>
+      <Button layoutX="677.0" layoutY="361.0" mnemonicParsing="false" onAction="#backHomeButton" text="Home" />
+      <Button layoutX="249.0" layoutY="238.0" mnemonicParsing="false" onAction="#returnButton" text="return" />
+      <Button layoutX="429.0" layoutY="322.0" mnemonicParsing="false" onAction="#refreshButton" text="refresh" />
+   </children>
+</AnchorPane>

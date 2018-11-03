@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagementController">
+   <children>
+      <Button layoutX="54.0" layoutY="68.0" mnemonicParsing="false" onAction="#changeScreenButton2" text="User DB" />
+      <Button layoutX="54.0" layoutY="137.0" mnemonicParsing="false" onAction="#changeScreenButton" text="Library DB" />
+      <Button layoutX="54.0" layoutY="210.0" mnemonicParsing="false" onAction="#changeScreenButton3" text="Check out/in" />
+   </children>
+</AnchorPane>
